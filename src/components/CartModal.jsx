@@ -13,7 +13,7 @@ const CartModal = ({ cartItems, closeCart, removeFromCart }) => {
               <li key={item.id} className="flex justify-between items-center mb-4 cart-item">
                 <span>{item.title}</span>
                 <button
-                  className="bg-red-500 text-white px-4 py-2 rounded remove-btn"
+                  className="bg-green-500 text-white px-4 py-2 rounded remove-btn"
                   onClick={() => removeFromCart(item.id)}
                 >
                   Remove

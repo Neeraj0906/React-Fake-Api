@@ -10,12 +10,14 @@ const ProductCard = ({ product, addToCart }) => {
       />
       <h2 className="text-lg font-bold">{product.title}</h2>
       <p className="text-gray-500">${product.price}</p>
+      <div className="btn-Addtocart">
       <button
         className="mt-4 bg-green-500 text-white px-4 py-2 rounded"
         onClick={() => addToCart(product)}
       >
         Add to Cart
       </button>
+      </div>
     </div>
   );
 };
